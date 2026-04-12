@@ -1,40 +1,40 @@
-import { ArrowRight, Code2, Zap, Globe, Smartphone, Music } from "lucide-react";
-import { Link } from "react-router-dom";
+import { ArrowRight, icons } from "lucide-react";
+import { Link, NavLink } from "react-router-dom";
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900">
+    <div className="min-h-screen bg-gradient-to-br from-[#222831] via-[#222831] to-[#222831]">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-md">
-        <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
-              <Music className="w-6 h-6 text-white" />
-            </div>
-            <span className="text-xl font-bold text-white">Soundscape</span>
-          </Link>
+      <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#222831] backdrop-blur-md">
+        <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between md:justify-center gap-12 relative">
+          <NavLink to="/" className="absolute left-0 ">
+            <span className="text-xl font-bold text-white">Xciora Tech</span>
+          </NavLink>
           <div className="hidden md:flex items-center gap-8">
-            <Link
-              to="#features"
+            <NavLink
+              to="#home"
               className="text-slate-300 hover:text-white transition-colors"
             >
-              Features
-            </Link>
-            <Link
+              Home
+            </NavLink>
+            <NavLink
+              to="#about"
+              className="text-slate-300 hover:text-white transition-colors"
+            >
+              About Us
+            </NavLink>
+            <NavLink
               to="#services"
               className="text-slate-300 hover:text-white transition-colors"
             >
               Services
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="#contact"
               className="text-slate-300 hover:text-white transition-colors"
             >
-              Contact
-            </Link>
-            <button className="px-6 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg font-semibold transition-colors">
-              Get Started
-            </button>
+              Contact Us
+            </NavLink>
           </div>
         </div>
       </nav>
@@ -54,43 +54,24 @@ const HomePage = () => {
             {/* Left Content */}
             <div className="space-y-8">
               <div className="space-y-4">
-                <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-                  <span className="text-white">Let&apos;s Create</span>
-                  <br />
-                  <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
-                    Something Extraordinary
+                <h1 className="text-5xl md:text-4xl font-extrabold leading-tight uppercase text-center w-full mx-auto">
+                  <span className="text-white">
+                    Let&rsquo;s build something{" "}
                   </span>
+                  <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
+                    Extraordinary
+                  </span>
+                  <span className="text-white"> together</span>
                 </h1>
-                <p className="text-lg text-slate-300 leading-relaxed max-w-lg">
-                  Transform your ideas into elegant digital experiences. We
-                  combine innovative design with cutting-edge technology to
-                  build solutions that inspire.
+                <p className="text-md font-medium text-[#E2D1B3] leading-relaxed max-w-lg uppercase text-center w-full mx-auto">
+                  We transform complex challenges into elegant digital
+                  realities. Every pixel, every interaction, and every line of
+                  code is treated as a masterwork.
                 </p>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button className="px-8 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-lg font-semibold transition-colors flex items-center justify-center gap-2">
-                  Explore Now
-                  <ArrowRight className="w-5 h-5" />
-                </button>
-                <button className="px-8 py-3 border border-slate-400 text-white hover:bg-white/5 rounded-lg font-semibold transition-colors">
-                  View Portfolio
-                </button>
-              </div>
-
-              {/* Stats */}
-              <div className="grid grid-cols-3 gap-6 pt-8 border-t border-slate-700">
-                <div>
-                  <p className="text-3xl font-bold text-orange-500">500+</p>
-                  <p className="text-sm text-slate-400">Projects Delivered</p>
-                </div>
-                <div>
-                  <p className="text-3xl font-bold text-orange-500">98%</p>
-                  <p className="text-sm text-slate-400">Client Satisfaction</p>
-                </div>
-                <div>
-                  <p className="text-3xl font-bold text-orange-500">50+</p>
-                  <p className="text-sm text-slate-400">Team Members</p>
+                <div className="text-center">
+                  <button className="px-8 py-3 bg-[#677D6A] hover:bg-[#5a6b5c] text-[#E2D1B3] rounded-lg font-semibold transition-colors">
+                    Have a look at us
+                  </button>
                 </div>
               </div>
             </div>
@@ -99,8 +80,8 @@ const HomePage = () => {
             <div className="relative h-96 md:h-full flex items-center justify-center">
               <div className="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-blue-500/20 rounded-2xl blur-3xl" />
               <img
-                src="/assets/player.png"
-                alt="Creative player illustration"
+                src="/assets/logo_image.png"
+                alt="xciora tech logo"
                 width={400}
                 height={400}
                 className="relative z-10 drop-shadow-2xl"
@@ -110,81 +91,8 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section
-        id="features"
-        className="relative px-6 py-20 border-t border-white/10"
-      >
-        <div className="mx-auto max-w-7xl">
-          <div className="space-y-12">
-            <div className="space-y-4 text-center">
-              <h2 className="text-4xl font-bold text-white">Why Choose Us?</h2>
-              <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-                We deliver exceptional results through innovation, dedication,
-                and expertise
-              </p>
-            </div>
-
-            {/* Feature Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                {
-                  icon: Code2,
-                  title: "Clean Code",
-                  description:
-                    "Beautifully architected solutions built with modern standards and best practices.",
-                },
-                {
-                  icon: Zap,
-                  title: "Lightning Fast",
-                  description:
-                    "Optimized performance that keeps your users engaged and coming back.",
-                },
-                {
-                  icon: Globe,
-                  title: "Scalable Design",
-                  description:
-                    "Solutions that grow with your business without compromising quality.",
-                },
-                {
-                  icon: Smartphone,
-                  title: "Mobile First",
-                  description:
-                    "Perfectly optimized experiences across all devices and screen sizes.",
-                },
-                {
-                  icon: Music,
-                  title: "Creative Focus",
-                  description:
-                    "Innovative designs that captivate and convert your audience.",
-                },
-                {
-                  icon: ArrowRight,
-                  title: "24/7 Support",
-                  description:
-                    "Round-the-clock support to ensure your success every step of the way.",
-                },
-              ].map((feature, idx) => {
-                const IconComponent = feature.icon;
-                return (
-                  <div
-                    key={idx}
-                    className="group p-6 rounded-xl bg-white/5 border border-white/10 hover:border-orange-500/50 hover:bg-white/10 transition-all duration-300"
-                  >
-                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                      <IconComponent className="w-6 h-6 text-white" />
-                    </div>
-                    <h3 className="text-lg font-semibold text-white mb-2">
-                      {feature.title}
-                    </h3>
-                    <p className="text-slate-400">{feature.description}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="bg-[#E2D1B3] h-6" />
+      <div className="bg-[#F39F5A] h-6" />
 
       {/* Services Section */}
       <section
@@ -194,43 +102,52 @@ const HomePage = () => {
         <div className="mx-auto max-w-7xl">
           <div className="space-y-12">
             <div className="space-y-4">
-              <h2 className="text-4xl font-bold text-white">Our Services</h2>
-              <div className="w-16 h-1 bg-gradient-to-r from-orange-500 to-transparent rounded-full" />
+              <h2 className="text-4xl font-extrabold text-[#E2D1B3] uppercase">
+                What we Do?
+              </h2>
+              <div className="w-40 h-1 bg-gradient-to-r from-orange-500 to-transparent rounded-full" />
             </div>
 
             {/* Services Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {[
                 {
-                  title: "Web Development",
+                  icon: icons["Monitor"],
+                  title: "Website Development",
                   description:
-                    "Modern web applications built with latest technologies and frameworks.",
+                    "High-performance digital storefronts that command attention and convert curiosity into loyalty.",
                 },
                 {
+                  icon: icons["Smartphone"],
                   title: "App Development",
                   description:
-                    "Native and cross-platform mobile apps that delight users.",
+                    "Intuitive mobile experiences engineered for seamless utility and emotional resonance.",
                 },
                 {
-                  title: "UI/UX Design",
+                  icon: icons["Monitor"],
+                  title: "SaaS Solutions",
                   description:
-                    "Intuitive interfaces that engage users and drive conversions.",
+                    "Scalable software ecosystems built on robust architectures that evolve with your enterprise.",
                 },
                 {
+                  icon: icons["Megaphone"],
                   title: "Digital Marketing",
                   description:
-                    "Strategic marketing solutions that amplify your brand message.",
+                    "Data-driven narratives that cut through noise and position your brand as a market leader.",
                 },
               ].map((service, idx) => (
                 <div
                   key={idx}
-                  className="p-8 rounded-xl bg-gradient-to-br from-white/10 to-white/5 border border-white/20 hover:border-orange-500/50 transition-all group cursor-pointer"
+                  className="p-8 rounded-xl bg-gradient-to-br from-white/10 to-white/5 border border-white/20 hover:border-[#677D6A] transition-all group cursor-pointer"
                 >
+                  {service.icon && (
+                    <service.icon className="w-10 h-10 mb-4 group-hover:text-white group-hover text-[#677D6A]" />
+                  )}
                   <div className="flex items-start justify-between mb-4">
-                    <h3 className="text-2xl font-semibold text-white">
+                    <h3 className="text-2xl font-semibold text-[#E2D1B3] group-hover:text-white transition-colors">
                       {service.title}
                     </h3>
-                    <ArrowRight className="w-6 h-6 text-orange-500 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all" />
+                    {/* <ArrowRight className="w-6 h-6 text-orange-500 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all" /> */}
                   </div>
                   <p className="text-slate-300 leading-relaxed">
                     {service.description}
@@ -270,10 +187,9 @@ const HomePage = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
-                  <Music className="w-6 h-6 text-white" />
-                </div>
-                <span className="text-xl font-bold text-white">Soundscape</span>
+                <span className="text-xl font-bold text-white">
+                  Xciora Tech
+                </span>
               </div>
               <p className="text-slate-400 text-sm">
                 Crafting digital experiences with precision and passion.
