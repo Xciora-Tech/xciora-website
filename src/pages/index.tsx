@@ -1,4 +1,4 @@
-import { ArrowRight, icons } from "lucide-react";
+import { icons } from "lucide-react";
 
 const serviceData = [
   {
@@ -127,23 +127,41 @@ const HomePage = () => {
         </section>
 
         {/* CTA Section */}
-        <section
-          id="contact"
-          className="relative px-6 py-20 border-t border-white/10"
-        >
-          <div className="mx-auto max-w-4xl">
-            <div className="rounded-2xl bg-gradient-to-br from-orange-500/20 to-blue-500/20 border border-orange-500/50 p-12 text-center space-y-6">
-              <h2 className="text-4xl font-bold text-white">
-                Ready to Build Your Legacy?
-              </h2>
-              <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-                Let&apos;s transform your vision into reality. Connect with us
-                today and start your journey to digital excellence.
-              </p>
-              <button className="px-8 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-lg font-semibold transition-colors inline-flex items-center gap-2">
-                Let&apos;s Create Together
-                <ArrowRight className="w-5 h-5" />
-              </button>
+        <section className="relative overflow-hidden px-6 py-20 md:py-32">
+          <div className="absolute inset-0 opacity-30">
+            <img
+              src="/assets/spiral_background.svg"
+              alt="Background pattern"
+              className="object-cover w-full h-full"
+            />
+          </div>
+
+          <div className="mx-auto max-w-7xl relative z-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              {/* Left Content */}
+              <div className="space-y-8">
+                <div className="space-y-4">
+                  <h1 className="text-5xl md:text-4xl font-extrabold leading-tight uppercase text-center w-full mx-auto">
+                    <span className="text-white">Inspired by </span>
+                    <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
+                      Innovation.
+                    </span>
+                    <span className="text-white"> Built for Global </span>
+                    <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
+                      Impact.
+                    </span>
+                  </h1>
+                  <p className="text-md font-medium text-[#E2D1B3] leading-relaxed max-w-lg uppercase text-center w-full mx-auto">
+                    We combine strategy, design, and technology to deliver
+                    high-quality digital solutions for businesses across
+                    Australia and Bangladesh. Our global delivery model ensures
+                    the perfect balance of quality, speed, and cost-efficiency.
+                  </p>
+                </div>
+              </div>
+
+              {/* Right Image */}
+              <div className="relative h-96 md:h-full flex items-center justify-center"></div>
             </div>
           </div>
         </section>
