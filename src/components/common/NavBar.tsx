@@ -10,25 +10,25 @@ export const NavBar: FC = () => {
         </NavLink>
         <div className="hidden md:flex items-center gap-8">
           <NavLink
-            to="#home"
+            to="/"
             className="text-slate-300 hover:text-white transition-colors"
           >
             Home
           </NavLink>
           <NavLink
-            to="#about"
+            to="/about-us"
             className="text-slate-300 hover:text-white transition-colors"
           >
             About Us
           </NavLink>
           <NavLink
-            to="#services"
+            to="/services"
             className="text-slate-300 hover:text-white transition-colors"
           >
             Services
           </NavLink>
           <NavLink
-            to="#contact"
+            to="/contact-us"
             className="text-slate-300 hover:text-white transition-colors"
           >
             Contact Us
