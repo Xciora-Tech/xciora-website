@@ -145,7 +145,7 @@ const Home: FC = () => {
                   <span className="text-[#677D6A]">Built for Global </span>
                   <span className="text-[#F39F5A] bg-clip-text">Impact.</span>
                 </h3>
-                <p className="text-md font-medium text-[#E2D1B3] leading-relaxed max-w-lg uppercase w-full">
+                <p className="text-md font-medium text-[#E2D1B3] leading-relaxed max-w-2xl uppercase w-full">
                   We combine strategy, design, and technology to deliver
                   high-quality digital solutions for businesses across Australia
                   and Bangladesh. Our global delivery model ensures the perfect
