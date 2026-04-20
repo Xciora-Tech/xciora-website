@@ -25,7 +25,7 @@ const AboutUs: FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#222831] via-[#222831] to-[#222831]">
       {/* Hero Section */}
-      <section className="relative overflow-hidden px-6 py-20 md:py-32">
+      <section className="relative overflow-hidden py-20 md:py-60">
         <div className="absolute inset-0 opacity-20">
           <img
             src="/assets/background_image_second.svg"
@@ -34,20 +34,17 @@ const AboutUs: FC = () => {
           />
         </div>
 
-        <div className="mx-auto max-w-7xl relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="mx-auto container relative z-10">
+          <div className="flex gap-12 items-center">
             {/* Left Content */}
-            <div className="space-y-6">
+            <div className="space-y-6 flex-[1.5] ">
               <h1 className="text-4xl md:text-5xl font-extrabold leading-tight uppercase">
-                <span className="text-[#E2D1B3]">Building Digital</span>
-                <br />
-                <span className="text-[#E2D1B3]">Solutions</span>
-                <br />
-                <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
-                  Across Borders
-                </span>
+                <span className="text-[#E2D1B3]">
+                  Building Digital Solutions Across
+                </span>{" "}
+                <span className="text-[#F39F5A]">Borders</span>
               </h1>
-              <p className="text-sm font-medium text-[#E2D1B3] leading-relaxed max-w-md uppercase tracking-wide">
+              <p className="text-sm font-medium text-[#E2D1B3] leading-relaxed max-w-3xl uppercase tracking-wide">
                 We are a globally distributed digital solutions team, with
                 client-facing operations in Sydney and a dedicated engineering
                 team in Bangladesh. Our mission is to help businesses transform
@@ -58,10 +55,10 @@ const AboutUs: FC = () => {
             </div>
 
             {/* Right Content - Logo */}
-            <div className="flex justify-center items-center">
+            <div className="flex flex-1 justify-center items-center ">
               <div className="relative w-64 h-64">
                 <img
-                  src="/assets/logo_image.png"
+                  src="/assets/logo_image_secondary.png"
                   alt="Xciora Tech Logo"
                   className="w-full h-full object-contain"
                 />
@@ -72,21 +69,21 @@ const AboutUs: FC = () => {
       </section>
 
       {/* Orange Divider */}
-      <div className="bg-[#E2D1B3] h-6" />
-      <div className="bg-[#F39F5A] h-6" />
+      <div className="bg-[#E2D1B3] h-10" />
+      <div className="bg-[#F39F5A] h-10" />
 
       {/* Our Story Section */}
-      <section className="relative overflow-hidden px-6 py-20 md:py-32 bg-[#1a1f24]">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <section className="relative overflow-hidden py-20 md:py-60 bg-[#1a1f24]">
+        <div className="mx-auto container">
+          <div className="flex gap-12 items-center">
             {/* Left Content */}
-            <div className="space-y-7">
+            <div className="space-y-7 flex-[1.5]">
               {/* Logo and Section Title */}
               <div>
                 <h2 className="text-3xl md:text-4xl font-extrabold uppercase text-[#677D6A] mb-4">
                   Our Story
                 </h2>
-                <div className="w-40 h-1 bg-gradient-to-r from-orange-500 to-transparent rounded-full" />
+                <div className="w-40 h-1 bg-[#F39F5A] rounded-full" />
               </div>
 
               {/* Description Text */}
@@ -106,7 +103,7 @@ const AboutUs: FC = () => {
             </div>
 
             {/* Right Content - Cassette Image */}
-            <div className="flex justify-center items-center">
+            <div className="flex flex-1 justify-center items-center">
               <div className="relative w-72 h-64">
                 <img
                   src="/assets/player.png"
@@ -120,15 +117,15 @@ const AboutUs: FC = () => {
       </section>
 
       {/* Our Values Section */}
-      <section className="relative overflow-hidden px-6 py-20 md:py-32">
-        <div className="mx-auto max-w-7xl">
+      <section className="relative overflow-hidden py-20 md:py-60">
+        <div className="mx-auto container">
           <div className="space-y-12">
             {/* Section Header */}
             <div>
               <h2 className="text-3xl md:text-4xl font-extrabold uppercase text-[#677D6A] mb-4">
                 Our Values
               </h2>
-              <div className="w-40 h-1 bg-gradient-to-r from-orange-500 to-transparent rounded-full" />
+              <div className="w-40 h-1 bg-[#F39F5A] rounded-full" />
             </div>
 
             {/* Values Grid */}
@@ -152,15 +149,15 @@ const AboutUs: FC = () => {
       </section>
 
       {/* Core Team Section */}
-      <section className="relative overflow-hidden px-6 py-20 md:py-32 bg-[#1a1f24]">
-        <div className="mx-auto max-w-7xl">
+      <section className="relative overflow-hidden py-20 md:py-60 bg-[#1a1f24]">
+        <div className="mx-auto container">
           <div className="space-y-12">
             {/* Section Header */}
             <div>
               <h2 className="text-3xl md:text-4xl font-extrabold uppercase text-[#677D6A] mb-4">
                 Core Team
               </h2>
-              <div className="w-40 h-1 bg-gradient-to-r from-orange-500 to-transparent rounded-full" />
+              <div className="w-40 h-1 bg-[#F39F5A] rounded-full" />
             </div>
 
             {/* Team Members */}
@@ -190,7 +187,7 @@ const AboutUs: FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="relative overflow-hidden px-6 py-20 md:py-32">
+      <section className="relative overflow-hidden py-20 md:py-60">
         <div className="mx-auto max-w-7xl">
           <div className="space-y-8 flex flex-col items-center">
             <h2 className="text-4xl md:text-5xl font-extrabold leading-tight uppercase text-center">

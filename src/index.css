@@ -4,6 +4,118 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "Montserrat", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+/* 1. Reset / Normalize basics */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Root defaults */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background-color: #fff;
+  color: #111;
+}
+
+/* 3. Media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 4. Form elements */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+/* 5. Buttons */
+button {
+  cursor: pointer;
+}
+
+/* 6. Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 7. Lists */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 8. Table fixes */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 9. Prevent overflow issues */
+body,
+#root {
+  min-height: 100vh;
+}
+
+/* 10. Scrollbar (optional styling) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
 .container {
-  max-width: 95%;
+  max-width: 90%;
+}
+
+/* media queries 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* media queries 576px to 768px  */
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    max-width: 70%;
+  }
+}
+
+/* media queries below 576px */
+@media (max-width: 575px) {
+  .container {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
 }
