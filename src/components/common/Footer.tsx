@@ -2,7 +2,6 @@ import { type FC } from "react";
 import { Link } from "react-router-dom";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaBehance } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
 
 const footerColumnData = [
   {
@@ -38,11 +37,6 @@ const footerColumnData = [
         url: "https://www.behance.net/xciora-tech",
         icon: <FaBehance className="w-4 h-4 text-[#101419]" />,
       },
-      {
-        name: "Email Us",
-        url: "mailto:info@xciora.com",
-        icon: <HiOutlineMail className="w-4 h-4 text-[#101419]" />,
-      },
     ],
   },
 ];
@@ -73,42 +67,53 @@ export const Footer: FC = () => {
           {footerColumnData.map((col, idx) => (
             <div key={idx}>
               <h4 className="font-semibold text-[#E2D1B3] mb-4">{col.title}</h4>
-              <ul className="space-y-2">
-                {col.links.map((link, i) => {
-                  if (typeof link === "string") {
+
+              {/* Connect column: render icons only in a row */}
+              {col.title === "Connect" ? (
+                <div className="flex items-center gap-2">
+                  {col.links.map((link, i) => {
+                    if (typeof link === "string" || !("icon" in link))
+                      return null;
+                    return (
+                      <Link
+                        key={i}
+                        to={link.url}
+                        aria-label={link.name}
+                        className="h-8 w-8 bg-[#677D6A] rounded-sm flex items-center justify-center hover:bg-[#7a9480] transition-colors"
+                      >
+                        {link.icon}
+                      </Link>
+                    );
+                  })}
+                </div>
+              ) : (
+                <ul className="space-y-2">
+                  {col.links.map((link, i) => {
+                    if (typeof link === "string") {
+                      return (
+                        <li key={i}>
+                          <Link
+                            to="#"
+                            className="text-slate-400 hover:text-slate-300 transition-colors text-sm"
+                          >
+                            {link}
+                          </Link>
+                        </li>
+                      );
+                    }
                     return (
                       <li key={i}>
                         <Link
-                          to="#"
+                          to={link.url}
                           className="text-slate-400 hover:text-slate-300 transition-colors text-sm"
                         >
-                          {link}
+                          {link.name}
                         </Link>
                       </li>
                     );
-                  }
-
-                  return (
-                    <li key={i}>
-                      <Link
-                        to={link.url}
-                        className="text-slate-400 hover:text-slate-300 transition-colors text-sm"
-                      >
-                        {"icon" in link ? (
-                          <div className="flex items-center gap-2">
-                            <span className="h-5 w-5 bg-[#677D6A] rounded-sm flex items-center justify-center">
-                              {link.icon}
-                            </span>
-                            <span>{link.name}</span>
-                          </div>
-                        ) : (
-                          link.name
-                        )}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
+                  })}
+                </ul>
+              )}
             </div>
           ))}
         </div>

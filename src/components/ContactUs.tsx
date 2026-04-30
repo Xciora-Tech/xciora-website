@@ -11,7 +11,7 @@ const ContactUs: FC = () => {
   return (
     <div className="min-h-screen bg-[#222831]">
       {/* Hero Section */}
-      <section className="relative overflow-hidden px-6 py-20 md:py-32">
+      <section className="relative overflow-hidden px-6 py-20 md:py-22">
         <div className="mx-auto container relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
@@ -88,7 +88,7 @@ const ContactUs: FC = () => {
                       <input
                         type="text"
                         placeholder="Who you are?"
-                        className="w-full pb-2 border-b-2 border-[#364251] bg-transparent text-[#E2D1B3] placeholder-[#E2D1B3]/30 focus:outline-none focus:border-[#F39F5A] transition-colors"
+                        className="w-full pb-2 border-b-2 border-[#364251] bg-transparent text-[#E2D1B3] placeholder-[#364251] focus:outline-none focus:border-[#F39F5A] transition-colors"
                         required
                       />
                     </div>
@@ -100,7 +100,7 @@ const ContactUs: FC = () => {
                       <input
                         type="email"
                         placeholder="email@email.com"
-                        className="w-full bg-transparent border-b-2 border-[#364251] text-[#E2D1B3] placeholder-[#E2D1B3]/30 focus:outline-none focus:border-[#F39F5A] transition-colors pb-2"
+                        className="w-full bg-transparent border-b-2 border-[#364251] text-[#E2D1B3] placeholder-[#364251] focus:outline-none focus:border-[#F39F5A] transition-colors pb-2"
                         required
                       />
                     </div>
@@ -110,20 +110,32 @@ const ContactUs: FC = () => {
                     <label className="block text-sm uppercase text-[#F39F5A] font-semibold tracking-wide mb-3">
                       How Can We Help ?
                     </label>
-                    <select className="w-full bg-transparent border-b-2 border-[#364251] text-[#E2D1B3] focus:outline-none focus:border-[#F39F5A] transition-colors pb-2 appearance-none cursor-pointer">
-                      <option value="" className="bg-[#222831]">
+                    <select className="w-full bg-transparent border-b-2 border-[#364251] text-[#364251] focus:outline-none focus:border-[#F39F5A] transition-colors pb-2 appearance-none cursor-pointer">
+                      <option value="" className="bg-[#222831] text-[#364251]">
                         Select a service
                       </option>
-                      <option value="web" className="bg-[#222831]">
+                      <option
+                        value="web"
+                        className="bg-[#222831] text-[#E2D1B3]"
+                      >
                         Web Development
                       </option>
-                      <option value="app" className="bg-[#222831]">
+                      <option
+                        value="app"
+                        className="bg-[#222831] text-[#E2D1B3]"
+                      >
                         App Development
                       </option>
-                      <option value="saas" className="bg-[#222831]">
+                      <option
+                        value="saas"
+                        className="bg-[#222831] text-[#E2D1B3]"
+                      >
                         SaaS Solutions
                       </option>
-                      <option value="marketing" className="bg-[#222831]">
+                      <option
+                        value="marketing"
+                        className="bg-[#222831] text-[#E2D1B3]"
+                      >
                         Digital Marketing
                       </option>
                     </select>
@@ -134,9 +146,9 @@ const ContactUs: FC = () => {
                       Project Brief
                     </label>
                     <textarea
-                      placeholder="Tell us about your goals . . ."
+                      placeholder="Tell us about your goals ..."
                       rows={4}
-                      className="w-full border-b-2 border-[#364251] bg-transparent text-[#E2D1B3] placeholder-[#E2D1B3]/30 focus:outline-none focus:border-[#F39F5A] transition-colors pb-2 resize-none"
+                      className="w-full border-b-2 border-[#364251] bg-transparent text-[#E2D1B3] placeholder-[#364251] focus:outline-none focus:border-[#F39F5A] transition-colors pb-2 resize-none"
                     />
                   </div>
 

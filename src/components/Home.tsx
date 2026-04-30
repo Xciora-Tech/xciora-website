@@ -95,7 +95,7 @@ const Home: FC = () => {
               <h2 className="text-4xl font-extrabold text-[#E2D1B3] uppercase">
                 What we Do
               </h2>
-              <div className="w-40 h-1 bg-gradient-to-r from-orange-500 to-transparent rounded-full" />
+              <div className="w-40 h-1 bg-[#F39F5A] rounded-full" />
             </div>
 
             {/* Services Grid */}

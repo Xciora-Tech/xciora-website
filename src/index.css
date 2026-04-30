@@ -31,7 +31,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  background-color: #fff;
+  background-color: #222831;
   color: #111;
 }
 
@@ -52,7 +52,6 @@ textarea,
 select {
   font: inherit;
   outline: none;
-  border: none;
   background: none;
 }
 
