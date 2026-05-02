@@ -48,40 +48,40 @@ const OurService: FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#222831] via-[#222831] to-[#222831]">
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-20 md:py-32">
-        <div className="mx-auto container">
+      <section className="relative overflow-hidden py-16 md:py-20 lg:py-56">
+        <div className="mx-auto container px-4">
           {/* Title */}
-          <div className="mb-16">
-            <h2 className="text-5xl md:text-5xl font-extrabold uppercase text-[#E2D1B3] mb-4">
+          <div className="mb-8 md:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold uppercase text-[#E2D1B3] mb-4">
               Our Services
             </h2>
-            <div className="w-40 h-1 bg-[#F39F5A] rounded-full" />
+            <div className="w-32 md:w-40 h-1 bg-[#F39F5A] rounded-full" />
           </div>
 
           {/* Services Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-1 px-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
             {services.map((service) => {
               const Icon = service.icon;
               return (
                 <div
                   key={service.id}
-                  className={`group relative p-8 rounded-lg transition-all duration-300 border border-[#677D6A]/20 bg-[#101419] hover:bg-[#1a1f24]`}
+                  className={`group relative p-6 md:p-8 rounded-lg transition-all duration-300 border border-[#677D6A]/20 bg-[#101419] hover:bg-[#1a1f24]`}
                 >
                   {/* Icon Container */}
-                  <div className="mb-6 inline-flex p-4 bg-[#222831] rounded-lg group-hover:bg-[#2a3339] transition-colors">
+                  <div className="mb-4 md:mb-6 inline-flex p-3 md:p-4 bg-[#222831] rounded-lg group-hover:bg-[#2a3339] transition-colors">
                     <Icon
-                      className="w-8 h-8 text-[#677D6A] stroke-[1.5]"
+                      className="w-6 h-6 md:w-8 md:h-8 text-[#677D6A] stroke-[1.5]"
                       strokeWidth={1.5}
                     />
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-xl font-bold text-[#E2D1B3] mb-3 group-hover:text-[#F39F5A] transition-colors">
+                  <h3 className="text-lg md:text-xl font-bold text-[#E2D1B3] mb-2 md:mb-3 group-hover:text-[#F39F5A] transition-colors">
                     {service.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-sm leading-relaxed text-[#999999]">
+                  <p className="text-xs sm:text-sm leading-relaxed text-[#999999]">
                     {service.description}
                   </p>
                 </div>

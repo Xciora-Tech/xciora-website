@@ -25,7 +25,7 @@ const AboutUs: FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#222831] via-[#222831] to-[#222831]">
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-20 md:py-60">
+      <section className="relative overflow-hidden py-16 md:py-20 lg:py-72">
         <div className="absolute inset-0 opacity-20">
           <img
             src="/assets/background_image_second.svg"
@@ -34,17 +34,17 @@ const AboutUs: FC = () => {
           />
         </div>
 
-        <div className="mx-auto container relative z-10">
-          <div className="flex gap-12 items-center">
+        <div className="mx-auto container relative z-10 px-4">
+          <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
             {/* Left Content */}
-            <div className="space-y-6 flex-[1.5] ">
-              <h1 className="text-4xl md:text-5xl font-extrabold leading-tight uppercase">
+            <div className="space-y-4 md:space-y-6 flex-[1.5] w-full">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight uppercase">
                 <span className="text-[#E2D1B3]">
                   Building Digital Solutions Across
                 </span>{" "}
                 <span className="text-[#F39F5A]">Borders</span>
               </h1>
-              <p className="text-sm font-medium text-[#E2D1B3] leading-relaxed max-w-3xl uppercase tracking-wide">
+              <p className="text-xs sm:text-sm font-medium text-[#E2D1B3] leading-relaxed uppercase tracking-wide">
                 We are a globally distributed digital solutions team, with
                 client-facing operations in Sydney and a dedicated engineering
                 team in Bangladesh. Our mission is to help businesses transform
@@ -55,8 +55,8 @@ const AboutUs: FC = () => {
             </div>
 
             {/* Right Content - Logo */}
-            <div className="flex flex-1 justify-center items-center ">
-              <div className="relative w-64 h-64">
+            <div className="flex flex-1 justify-center items-center w-full">
+              <div className="relative w-48 h-48 md:w-64 md:h-64">
                 <img
                   src="/assets/logo_image_secondary.png"
                   alt="Xciora Tech Logo"
@@ -69,25 +69,25 @@ const AboutUs: FC = () => {
       </section>
 
       {/* Orange Divider */}
-      <div className="bg-[#E2D1B3] h-10" />
-      <div className="bg-[#F39F5A] h-10" />
+      <div className="bg-[#E2D1B3] h-6 md:h-10" />
+      <div className="bg-[#F39F5A] h-6 md:h-10" />
 
       {/* Our Story Section */}
-      <section className="relative overflow-hidden py-20 md:py-60 bg-[#1a1f24]">
-        <div className="mx-auto container">
-          <div className="flex gap-12 items-center">
+      <section className="relative overflow-hidden py-16 md:py-20 lg:py-72 bg-[#1a1f24]">
+        <div className="mx-auto container px-4">
+          <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
             {/* Left Content */}
-            <div className="space-y-7 flex-[1.5]">
+            <div className="space-y-5 md:space-y-7 flex-[1.5] w-full">
               {/* Logo and Section Title */}
               <div>
-                <h2 className="text-3xl md:text-4xl font-extrabold uppercase text-[#677D6A] mb-4">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold uppercase text-[#677D6A] mb-4">
                   Our Story
                 </h2>
-                <div className="w-40 h-1 bg-[#F39F5A] rounded-full" />
+                <div className="w-32 md:w-40 h-1 bg-[#F39F5A] rounded-full" />
               </div>
 
               {/* Description Text */}
-              <p className="text-sm font-medium text-[#E2D1B3] leading-relaxed">
+              <p className="text-xs sm:text-sm font-medium text-[#E2D1B3] leading-relaxed">
                 Our journey began with a simple idea – to bridge the gap between
                 world-class digital expertise and cost-effective solutions. With
                 deep experience in business analysis, enterprise systems, and
@@ -103,8 +103,8 @@ const AboutUs: FC = () => {
             </div>
 
             {/* Right Content - Cassette Image */}
-            <div className="flex flex-1 justify-center items-center">
-              <div className="relative w-72 h-64">
+            <div className="flex flex-1 justify-center items-center w-full">
+              <div className="relative w-56 md:w-72 h-48 md:h-64">
                 <img
                   src="/assets/player.png"
                   alt="Retro cassette player"
@@ -117,25 +117,25 @@ const AboutUs: FC = () => {
       </section>
 
       {/* Our Values Section */}
-      <section className="relative overflow-hidden py-20 md:py-60">
-        <div className="mx-auto container">
-          <div className="space-y-12">
+      <section className="relative overflow-hidden py-16 md:py-20 lg:py-72">
+        <div className="mx-auto container px-4">
+          <div className="space-y-8 md:space-y-12">
             {/* Section Header */}
             <div>
-              <h2 className="text-3xl md:text-4xl font-extrabold uppercase text-[#677D6A] mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold uppercase text-[#677D6A] mb-4">
                 Our Values
               </h2>
-              <div className="w-40 h-1 bg-[#F39F5A] rounded-full" />
+              <div className="w-32 md:w-40 h-1 bg-[#F39F5A] rounded-full" />
             </div>
 
             {/* Values Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {values.map((value, index) => (
                 <div
                   key={index}
-                  className="bg-[#1a1f24] border border-[#677D6A]/20 rounded-lg p-8 hover:border-[#F39F5A]/50 transition-colors duration-300"
+                  className="bg-[#1a1f24] border border-[#677D6A]/20 rounded-lg p-6 md:p-8 hover:border-[#F39F5A]/50 transition-colors duration-300"
                 >
-                  <h3 className="text-xl font-bold text-[#F39F5A] uppercase mb-4">
+                  <h3 className="text-lg md:text-xl font-bold text-[#F39F5A] uppercase mb-4">
                     {value.title}
                   </h3>
                   <p className="text-[#E2D1B3] text-sm leading-relaxed">
@@ -149,56 +149,48 @@ const AboutUs: FC = () => {
       </section>
 
       {/* Core Team Section */}
-      <section className="relative overflow-hidden py-20 md:py-60 bg-[#1a1f24]">
-        <div className="mx-auto container">
-          <div className="space-y-12">
+      <section className="relative overflow-hidden py-16 md:py-20 lg:py-60 bg-[#1a1f24]">
+        <div className="mx-auto container px-4">
+          <div className="space-y-8 md:space-y-12">
             {/* Section Header */}
             <div>
-              <h2 className="text-3xl md:text-4xl font-extrabold uppercase text-[#677D6A] mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold uppercase text-[#677D6A] mb-4">
                 Core Team
               </h2>
-              <div className="w-40 h-1 bg-[#F39F5A] rounded-full" />
+              <div className="w-32 md:w-40 h-1 bg-[#F39F5A] rounded-full" />
             </div>
 
             {/* Team Members */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-0 rounded-lg overflow-hidden">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-0 rounded-lg overflow-hidden">
               {teamMembers.map((member, index) => (
                 <div
                   key={index}
-                  className="p-16 md:p-20 text-center flex items-center justify-center"
+                  className="p-8 sm:p-12 md:p-16 lg:p-20 text-center flex items-center justify-center"
                   style={{ backgroundColor: member.color }}
                 >
-                  <p className="text-[#222831] font-bold uppercase text-lg">
+                  <p className="text-[#222831] font-bold uppercase text-base md:text-lg">
                     {member.name}
                   </p>
                 </div>
               ))}
             </div>
-
-            {/* Team Description */}
-            <p className="text-[#E2D1B3] text-sm leading-relaxed max-w-3xl">
-              Our diverse team brings together expertise across frontend
-              development, backend architecture, design, and project management.
-              We work collaboratively to ensure every project receives the
-              attention and skill it deserves.
-            </p>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="relative overflow-hidden py-20 md:py-60">
-        <div className="mx-auto max-w-7xl">
-          <div className="space-y-8 flex flex-col items-center">
-            <h2 className="text-4xl md:text-5xl font-extrabold leading-tight uppercase text-center">
+      <section className="relative overflow-hidden py-16 md:py-20 lg:py-56">
+        <div className="mx-auto container px-4">
+          <div className="space-y-6 md:space-y-8 flex flex-col items-center">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight uppercase text-center">
               <span className="text-[#E2D1B3]">Ready to work with us?</span>
             </h2>
-            <p className="text-[#E2D1B3] text-center max-w-2xl">
+            <p className="text-[#E2D1B3] text-center text-sm md:text-base max-w-2xl px-4">
               Let&apos;s bring your vision to life with our experienced team.
             </p>
             <a
               href="/contact-us"
-              className="px-8 py-3 bg-[#F39F5A] hover:bg-orange-500 text-[#222831] rounded font-bold uppercase transition-colors duration-200 flex items-center gap-2"
+              className="px-6 py-3 md:px-8 md:py-3 bg-[#F39F5A] hover:bg-orange-500 text-[#222831] rounded font-bold uppercase transition-colors duration-200 flex items-center gap-2 text-sm md:text-base"
             >
               Get In Touch
               <span>→</span>

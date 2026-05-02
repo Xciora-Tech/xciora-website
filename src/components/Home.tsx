@@ -32,7 +32,7 @@ const Home: FC = () => {
   return (
     <div className="min-h-screen bg-[#222831]">
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-20 md:py-60">
+      <section className="relative overflow-hidden py-16 md:py-20 lg:py-56">
         <div className="absolute inset-0">
           <img
             src="/assets/background_image.svg"
@@ -41,12 +41,12 @@ const Home: FC = () => {
           />
         </div>
 
-        <div className="mx-auto container relative z-10">
-          <div className="flex gap-12 items-center">
+        <div className="mx-auto container relative z-10 px-4">
+          <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
             {/* Left Content */}
-            <div className="space-y-8 flex-[1.5]">
-              <div className="space-y-4">
-                <h1 className="text-4xl md:text-5xl font-extrabold leading-tight uppercase text-center w-full mx-auto">
+            <div className="space-y-6 md:space-y-8 flex-[1.5] w-full">
+              <div className="space-y-4 text-center">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight uppercase">
                   <span className="text-[#677D6A]">
                     Let&rsquo;s build something{" "}
                   </span>
@@ -55,13 +55,13 @@ const Home: FC = () => {
                   </span>
                   <span className="text-[#677D6A]"> together</span>
                 </h1>
-                <p className="text-md font-medium text-[#E2D1B3] leading-relaxed max-w-2xl uppercase text-center w-full mx-auto">
+                <p className="text-sm md:text-base font-medium text-[#E2D1B3] leading-relaxed uppercase">
                   We transform complex challenges into elegant digital
                   realities. Every pixel, every interaction, and every line of
                   code is treated as a masterwork.
                 </p>
-                <div className="text-center">
-                  <button className="px-8 py-3 mt-5 bg-[#677D6A] hover:bg-[#5a6b5c] text-[#E2D1B3] rounded-lg font-semibold transition-colors">
+                <div className="flex justify-center">
+                  <button className="px-6 py-3 md:px-8 md:py-3 bg-[#677D6A] hover:bg-[#5a6b5c] text-[#E2D1B3] rounded-lg font-semibold transition-colors text-sm md:text-base">
                     Have a look at us
                   </button>
                 </div>
@@ -69,12 +69,12 @@ const Home: FC = () => {
             </div>
 
             {/* Right Image */}
-            <div className="relative h-96 flex-1  md:h-full flex items-center justify-center">
+            <div className="relative h-64 md:h-80 lg:h-96 flex-1 w-full flex items-center justify-center">
               <div className="absolute inset-0" />
               <img
                 src="/assets/logo_image.png"
                 alt="xciora tech logo"
-                className="relative z-10 drop-shadow-2xl"
+                className="relative z-10 drop-shadow-2xl max-h-full w-auto"
               />
             </div>
           </div>
@@ -87,30 +87,30 @@ const Home: FC = () => {
       {/* Services Section */}
       <section
         id="services"
-        className="relative py-20 border-t border-white/10"
+        className="relative py-16 md:py-20 lg:py-56 border-t border-white/10"
       >
-        <div className="mx-auto container relative z-10">
-          <div className="space-y-12">
+        <div className="mx-auto container relative z-10 px-4">
+          <div className="space-y-8 md:space-y-12">
             <div className="space-y-4">
-              <h2 className="text-4xl font-extrabold text-[#E2D1B3] uppercase">
+              <h2 className="text-3xl md:text-4xl font-extrabold text-[#E2D1B3] uppercase">
                 What we Do
               </h2>
-              <div className="w-40 h-1 bg-[#F39F5A] rounded-full" />
+              <div className="w-32 md:w-40 h-1 bg-[#F39F5A] rounded-full" />
             </div>
 
             {/* Services Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 bg-[#101419] rounded-sm p-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 bg-[#101419] rounded-sm p-4 md:p-6">
               {serviceData.map((service, idx) => (
-                <div key={idx} className="p-6">
+                <div key={idx} className="p-4 md:p-6">
                   {service.icon && (
                     <service.icon className="w-10 h-10 mb-4 text-[#677D6A] bg-[#222831] rounded-sm p-2" />
                   )}
                   <div className="flex items-start justify-between mb-4">
-                    <h3 className="text-xl font-semibold text-[#E2D1B3]  ">
+                    <h3 className="text-lg md:text-xl font-semibold text-[#E2D1B3]">
                       {service.title}
                     </h3>
                   </div>
-                  <p className="text-slate-300 leading-relaxed">
+                  <p className="text-sm text-slate-300 leading-relaxed">
                     {service.description}
                   </p>
                 </div>
@@ -121,8 +121,8 @@ const Home: FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="relative overflow-hidden py-20 md:py-60">
-        <div className="absolute inset-0 container mx-auto">
+      <section className="relative overflow-hidden py-16 md:py-20 lg:py-56">
+        <div className="absolute inset-0">
           <img
             src="/assets/spiral_background.svg"
             alt="Background pattern"
@@ -130,22 +130,22 @@ const Home: FC = () => {
           />
         </div>
 
-        <div className="mx-auto container relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="mx-auto container relative z-10 px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Left Content */}
-            <div className="space-y-8">
+            <div className="space-y-6 md:space-y-8">
               <div className="space-y-4">
-                <h3 className="text-4xl md:text-5xl font-extrabold leading-tight uppercase w-full">
+                <h3 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight uppercase">
                   <span className="text-[#677D6A]">Inspired by </span>
                   <span className="text-[#F39F5A] bg-clip-text">
                     Innovation.
                   </span>
                 </h3>
-                <h3 className="text-4xl md:text-5xl font-extrabold leading-tight uppercase w-full">
+                <h3 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight uppercase">
                   <span className="text-[#677D6A]">Built for Global </span>
                   <span className="text-[#F39F5A] bg-clip-text">Impact.</span>
                 </h3>
-                <p className="text-md font-medium text-[#E2D1B3] leading-relaxed max-w-2xl uppercase w-full">
+                <p className="text-sm md:text-base font-medium text-[#E2D1B3] leading-relaxed uppercase">
                   We combine strategy, design, and technology to deliver
                   high-quality digital solutions for businesses across Australia
                   and Bangladesh. Our global delivery model ensures the perfect
@@ -155,16 +155,16 @@ const Home: FC = () => {
             </div>
 
             {/* Right Image */}
-            <div className="relative h-96 md:h-full flex items-center justify-center"></div>
+            <div className="relative h-0 md:h-80 lg:h-96 flex items-center justify-center"></div>
           </div>
         </div>
       </section>
 
-      <section className="relative overflow-hidden px-6 py-20 md:py-32">
+      <section className="relative overflow-hidden px-4 md:px-6 py-10 md:py-20 lg:py-56">
         <div className="mx-auto container relative z-10">
-          <div className="space-y-8">
+          <div className="space-y-6 md:space-y-8">
             <div className="space-y-4 flex flex-col items-center">
-              <h2 className="text-6xl md:text-5xl font-extrabold leading-tight uppercase text-center mb-4">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight uppercase text-center mb-4">
                 <span className="text-[#E2D1B3]">
                   Ready to Build
                   <br />
@@ -172,8 +172,8 @@ const Home: FC = () => {
                 </span>
                 <span className="text-[#677D6A] ">Legacy ? </span>
               </h2>
-              <button className="bg-[#677D6A] text-[#E2D1B3] px-8 py-4 rounded-md transition-colors hover:bg-[#5c6b5f] uppercase font-bold">
-                Let’s Create together
+              <button className="bg-[#677D6A] text-[#E2D1B3] px-6 py-3 md:px-8 md:py-4 rounded-md transition-colors hover:bg-[#5c6b5f] uppercase font-bold text-sm md:text-base">
+                Let's Create together
               </button>
             </div>
           </div>

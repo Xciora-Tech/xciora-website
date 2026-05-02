@@ -44,20 +44,22 @@ const footerColumnData = [
 export const Footer: FC = () => {
   return (
     <footer className="border-t border-white/10 bg-[#101419] backdrop-blur-md">
-      <div className="mx-auto container py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-          <div>
-            <img
-              src="/assets/logo_image.png"
-              alt="XCiora Tech"
-              className="w-32 h-auto mb-2"
-            />
-            <div className="flex items-center gap-2 mb-4">
-              <span className="text-2xl font-bold text-[#E2D1B3] uppercase">
+      <div className="mx-auto container py-8 md:py-12 px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          <div className="text-center">
+            <div className="flex justify-center mb-4">
+              <img
+                src="/assets/logo_image.png"
+                alt="XCiora Tech"
+                className="w-24 md:w-32 h-auto"
+              />
+            </div>
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <span className="text-xl md:text-2xl font-bold text-[#E2D1B3] uppercase">
                 Xciora Tech
               </span>
             </div>
-            <p className="text-slate-400 text-sm">
+            <p className="text-slate-400 text-xs md:text-sm">
               Crafting premium digital
               <br />
               solutions.
@@ -65,12 +67,14 @@ export const Footer: FC = () => {
           </div>
 
           {footerColumnData.map((col, idx) => (
-            <div key={idx}>
-              <h4 className="font-semibold text-[#E2D1B3] mb-4">{col.title}</h4>
+            <div key={idx} className="text-center sm:text-left">
+              <h4 className="font-semibold text-[#E2D1B3] mb-4 text-sm md:text-base">
+                {col.title}
+              </h4>
 
               {/* Connect column: render icons only in a row */}
               {col.title === "Connect" ? (
-                <div className="flex items-center gap-2">
+                <div className="flex justify-center sm:justify-start items-center gap-2">
                   {col.links.map((link, i) => {
                     if (typeof link === "string" || !("icon" in link))
                       return null;
@@ -78,6 +82,8 @@ export const Footer: FC = () => {
                       <Link
                         key={i}
                         to={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         aria-label={link.name}
                         className="h-8 w-8 bg-[#677D6A] rounded-sm flex items-center justify-center hover:bg-[#7a9480] transition-colors"
                       >
@@ -94,7 +100,7 @@ export const Footer: FC = () => {
                         <li key={i}>
                           <Link
                             to="#"
-                            className="text-slate-400 hover:text-slate-300 transition-colors text-sm"
+                            className="text-slate-400 hover:text-slate-300 transition-colors text-xs md:text-sm"
                           >
                             {link}
                           </Link>
@@ -105,7 +111,7 @@ export const Footer: FC = () => {
                       <li key={i}>
                         <Link
                           to={link.url}
-                          className="text-slate-400 hover:text-slate-300 transition-colors text-sm"
+                          className="text-slate-400 hover:text-slate-300 transition-colors text-xs md:text-sm"
                         >
                           {link.name}
                         </Link>
@@ -119,8 +125,8 @@ export const Footer: FC = () => {
         </div>
       </div>
 
-      <div className="bg-[#F39F5A] py-4">
-        <p className="text-center text-[#101419] text-sm">
+      <div className="bg-[#F39F5A] py-3 md:py-4">
+        <p className="text-center text-[#101419] text-xs md:text-sm px-4 font-bold">
           © 2026 XCiora Tech. Crafted with love from the heart.
         </p>
       </div>
