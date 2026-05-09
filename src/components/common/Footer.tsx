@@ -44,22 +44,22 @@ const footerColumnData = [
 export const Footer: FC = () => {
   return (
     <footer className="border-t border-white/10 bg-[#101419] backdrop-blur-md">
-      <div className="mx-auto container py-8 md:py-12 px-4">
+      <div className="mx-auto container !py-8 md:py-12 px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-          <div className="text-center">
-            <div className="flex justify-center mb-4">
+          <div className="text-center sm:text-left">
+            <div className="flex justify-center sm:justify-start mb-4">
               <img
                 src="/assets/logo_image.png"
                 alt="XCiora Tech"
                 className="w-24 md:w-32 h-auto"
               />
             </div>
-            <div className="flex items-center justify-center gap-2 mb-4">
+            <div className="flex items-center justify-center sm:justify-start gap-2 mb-4">
               <span className="text-xl md:text-2xl font-bold text-[#E2D1B3] uppercase">
                 Xciora Tech
               </span>
             </div>
-            <p className="text-slate-400 text-xs md:text-sm">
+            <p className="text-slate-400 text-xs sm:text-sm ">
               Crafting premium digital
               <br />
               solutions.
@@ -85,7 +85,7 @@ export const Footer: FC = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={link.name}
-                        className="h-8 w-8 bg-[#677D6A] rounded-sm flex items-center justify-center hover:bg-[#7a9480] transition-colors"
+                        className={`h-8 w-8 bg-[#677D6A] rounded-sm flex items-center justify-center hover:bg-[#7a9480] transition-colors`}
                       >
                         {link.icon}
                       </Link>
@@ -98,12 +98,12 @@ export const Footer: FC = () => {
                     if (typeof link === "string") {
                       return (
                         <li key={i}>
-                          <Link
-                            to="#"
-                            className="text-slate-400 hover:text-slate-300 transition-colors text-xs md:text-sm"
+                          <span
+                            // to="#"
+                            className="text-slate-400 transition-colors text-xs md:text-sm"
                           >
                             {link}
-                          </Link>
+                          </span>
                         </li>
                       );
                     }

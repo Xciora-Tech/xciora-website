@@ -1,26 +1,26 @@
 import type { FC } from "react";
 
 const AboutUs: FC = () => {
-  const values = [
-    {
-      title: "Innovation",
-      description: "Cutting-edge solutions that push boundaries",
-    },
-    {
-      title: "Quality",
-      description: "Excellence in every line of code",
-    },
-    {
-      title: "Reliability",
-      description: "Dependable partners you can trust",
-    },
-  ];
+  // const values = [
+  //   {
+  //     title: "Innovation",
+  //     description: "Cutting-edge solutions that push boundaries",
+  //   },
+  //   {
+  //     title: "Quality",
+  //     description: "Excellence in every line of code",
+  //   },
+  //   {
+  //     title: "Reliability",
+  //     description: "Dependable partners you can trust",
+  //   },
+  // ];
 
-  const teamMembers = [
-    { name: "Frontend Developers", color: "#E2D1B3" },
-    { name: "Backend Developers", color: "#677D6A" },
-    { name: "UI/UX Designers", color: "#F39F5A" },
-  ];
+  // const teamMembers = [
+  //   { name: "Frontend Developers", color: "#E2D1B3" },
+  //   { name: "Backend Developers", color: "#677D6A" },
+  //   { name: "UI/UX Designers", color: "#F39F5A" },
+  // ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#222831] via-[#222831] to-[#222831]">
@@ -73,7 +73,7 @@ const AboutUs: FC = () => {
       <div className="bg-[#F39F5A] h-6 md:h-10" />
 
       {/* Our Story Section */}
-      <section className="relative overflow-hidden py-16 md:py-20 lg:py-72 bg-[#1a1f24]">
+      <section className="relative overflow-hidden py-16 md:py-20 lg:py-72 ">
         <div className="mx-auto container px-4">
           <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
             {/* Left Content */}
@@ -116,11 +116,9 @@ const AboutUs: FC = () => {
         </div>
       </section>
 
-      {/* Our Values Section */}
-      <section className="relative overflow-hidden py-16 md:py-20 lg:py-72">
+      {/* <section className="relative overflow-hidden py-16 md:py-20 lg:py-72">
         <div className="mx-auto container px-4">
           <div className="space-y-8 md:space-y-12">
-            {/* Section Header */}
             <div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold uppercase text-[#677D6A] mb-4">
                 Our Values
@@ -128,7 +126,6 @@ const AboutUs: FC = () => {
               <div className="w-32 md:w-40 h-1 bg-[#F39F5A] rounded-full" />
             </div>
 
-            {/* Values Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {values.map((value, index) => (
                 <div
@@ -148,11 +145,9 @@ const AboutUs: FC = () => {
         </div>
       </section>
 
-      {/* Core Team Section */}
-      <section className="relative overflow-hidden py-16 md:py-20 lg:py-60 bg-[#1a1f24]">
+      <section className="relative overflow-hidden py-16 md:py-20 lg:py-60">
         <div className="mx-auto container px-4">
           <div className="space-y-8 md:space-y-12">
-            {/* Section Header */}
             <div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold uppercase text-[#677D6A] mb-4">
                 Core Team
@@ -160,7 +155,6 @@ const AboutUs: FC = () => {
               <div className="w-32 md:w-40 h-1 bg-[#F39F5A] rounded-full" />
             </div>
 
-            {/* Team Members */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-0 rounded-lg overflow-hidden">
               {teamMembers.map((member, index) => (
                 <div
@@ -176,7 +170,7 @@ const AboutUs: FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="relative overflow-hidden py-16 md:py-20 lg:py-56">
