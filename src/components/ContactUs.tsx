@@ -114,7 +114,7 @@ const ContactUs: FC = () => {
                     <label className="block text-xs sm:text-sm uppercase text-[#F39F5A] font-semibold tracking-wide mb-2 md:mb-3">
                       How Can We Help ?
                     </label>
-                    <select className="w-full bg-transparent border-b-2 border-[#364251] text-[#364251] focus:outline-none focus:border-[#F39F5A] transition-colors pb-2 appearance-none cursor-pointer text-sm md:text-base">
+                    <select className="w-full bg-transparent border-b-2 border-[#364251] text-[#E2D1B3] focus:outline-none focus:border-[#F39F5A] transition-colors pb-2 appearance-none cursor-pointer text-sm md:text-base">
                       <option value="" className="bg-[#222831] text-[#364251]">
                         Select a service
                       </option>
