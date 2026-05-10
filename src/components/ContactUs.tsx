@@ -50,10 +50,10 @@ const ContactUs: FC = () => {
                     <Phone className="w-5 h-5 md:w-6 md:h-6 text-[#677D6A] flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="text-sm md:text-base text-[#FAFAFA]">
-                        <span className="font-semibold">AUS:</span> +61411423488
+                        <span className="font-semibold">AUS:</span> +61 411 423 488
                       </p>
                       <p className="text-sm md:text-base text-[#FAFAFA]">
-                        <span className="font-semibold">BD:</span> +880 17010542 71
+                        <span className="font-semibold">BD:</span> +880 1701 054 271
                       </p>
                     </div>
                   </div>
