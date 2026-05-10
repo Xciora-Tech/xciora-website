@@ -9,9 +9,9 @@ const ContactUs: FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#222831]">
+    <div className="bg-[#222831]">
       {/* Hero Section */}
-      <section className="relative overflow-hidden px-4 md:px-6 py-16 md:py-20 lg:py-56">
+      <section className="relative overflow-hidden px-4 md:px-6 py-16 md:py-20 lg:py-24">
         <div className="mx-auto container relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
             {/* Left Content */}
@@ -50,10 +50,12 @@ const ContactUs: FC = () => {
                     <Phone className="w-5 h-5 md:w-6 md:h-6 text-[#677D6A] flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="text-sm md:text-base text-[#FAFAFA]">
-                        <span className="font-semibold">AUS:</span> +61 411 423 488
+                        <span className="font-semibold">AUS:</span> +61 411 423
+                        488
                       </p>
                       <p className="text-sm md:text-base text-[#FAFAFA]">
-                        <span className="font-semibold">BD:</span> +880 1701 054 271
+                        <span className="font-semibold">BD:</span> +880 1701 054
+                        271
                       </p>
                     </div>
                   </div>
@@ -63,7 +65,8 @@ const ContactUs: FC = () => {
                     <MapPin className="w-5 h-5 md:w-6 md:h-6 text-[#677D6A] flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="text-sm md:text-base text-[#FAFAFA]">
-                        606/2 Stockyard Boulevard , Lidcombe NSW 2141, Australia.
+                        606/2 Stockyard Boulevard , Lidcombe NSW 2141,
+                        Australia.
                       </p>
                       <p className="text-sm md:text-base text-[#FAFAFA]">
                         116/7 East Maniknagar, Mugdha, Dhaka - 1203, Bangladesh.

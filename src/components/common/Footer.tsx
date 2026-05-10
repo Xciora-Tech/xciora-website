@@ -67,7 +67,10 @@ export const Footer: FC = () => {
           </div>
 
           {footerColumnData.map((col, idx) => (
-            <div key={idx} className="text-center sm:text-left">
+            <div
+              key={idx}
+              className={`text-center sm:text-left ${col.title !== "Connect" && "hidden sm:block"}`}
+            >
               <h4 className="font-semibold text-[#E2D1B3] mb-4 text-sm md:text-base">
                 {col.title}
               </h4>
@@ -100,7 +103,7 @@ export const Footer: FC = () => {
                         <li key={i}>
                           <span
                             // to="#"
-                            className="text-slate-400 transition-colors text-xs md:text-sm"
+                            className="text-slate-400 transition-colors text-xs md:text-sm "
                           >
                             {link}
                           </span>

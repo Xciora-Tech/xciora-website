@@ -46,9 +46,9 @@ const OurService: FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#222831] via-[#222831] to-[#222831]">
+    <div className="bg-[#222831]">
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-16 md:py-20 lg:py-56">
+      <section className="relative overflow-hidden py-16 md:py-20 lg:py-24">
         <div className="mx-auto container px-4">
           {/* Title */}
           <div className="mb-8 md:mb-16">
