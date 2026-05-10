@@ -69,7 +69,7 @@ const Home: FC = () => {
             </div>
 
             {/* Right Image */}
-            <div className="relative h-64 md:h-80 lg:h-96 flex-1 w-full flex items-center justify-center">
+            <div className="relative h-64 md:h-80 lg:h-96 flex-1 w-full flex items-center justify-center px-24 sm:px-0">
               <div className="absolute inset-0" />
               <img
                 src="/assets/logo_image.png"
