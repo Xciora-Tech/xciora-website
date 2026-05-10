@@ -50,12 +50,10 @@ const ContactUs: FC = () => {
                     <Phone className="w-5 h-5 md:w-6 md:h-6 text-[#677D6A] flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="text-sm md:text-base text-[#FAFAFA]">
-                        <span className="font-semibold">AUS:</span> +61 2 8503
-                        8000
+                        <span className="font-semibold">AUS:</span> +61411423488
                       </p>
                       <p className="text-sm md:text-base text-[#FAFAFA]">
-                        <span className="font-semibold">BD:</span> +880 1701
-                        0542 71
+                        <span className="font-semibold">BD:</span> +880 17010542 71
                       </p>
                     </div>
                   </div>
@@ -65,7 +63,7 @@ const ContactUs: FC = () => {
                     <MapPin className="w-5 h-5 md:w-6 md:h-6 text-[#677D6A] flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="text-sm md:text-base text-[#FAFAFA]">
-                        19 Woronora Ave, Leumeah NSW 2560, Australia.
+                        606/2 Stockyard Boulevard , Lidcombe NSW 2141, Australia.
                       </p>
                       <p className="text-sm md:text-base text-[#FAFAFA]">
                         116/7 East Maniknagar, Mugdha, Dhaka - 1203, Bangladesh.
