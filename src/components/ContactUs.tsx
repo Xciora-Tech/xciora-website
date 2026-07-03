@@ -65,8 +65,7 @@ const ContactUs: FC = () => {
                     <MapPin className="w-5 h-5 md:w-6 md:h-6 text-[#677D6A] flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="text-sm md:text-base text-[#FAFAFA]">
-                        606/2 Stockyard Boulevard , Lidcombe NSW 2141,
-                        Australia.
+                        Sydney, New South Wales, Australia.
                       </p>
                       <p className="text-sm md:text-base text-[#FAFAFA]">
                         116/7 East Maniknagar, Mugdha, Dhaka - 1203, Bangladesh.
